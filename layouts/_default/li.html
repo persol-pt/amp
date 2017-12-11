@@ -7,7 +7,7 @@
                                 </div>
                             </h3>
                             {{if gt (len .Summary) 200}}
-                                <p class="mb1">{{slicestr .Summary 3 200 }}</p>
+                                <p class="mb1">{{slicestr .Summary 0 200 }}</p>
                             {{else}}
                                 <p class="mb1">{{ .Summary }}</p>
                             {{end}}
