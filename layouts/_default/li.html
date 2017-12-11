@@ -1,7 +1,13 @@
                         <div class="ampstart-card abe-sample-card flex flex-column flex-auto p1 mb1">
-                            <h3 class="mb1">{{ .Title }}<i class=""></i></h3>
+                            <h3 class="mb1">{{ .Title }}<i class=""></i>
+                                <div style="font:italic normal bold 60% 'メイリオ',sans-serif;">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+                                <div style="font-size: 70%">
+                                    {{ range .Params.categories }}
+                                    <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }}
+                                </div>
+                            </h3>
                             {{if gt (len .Summary) 200}}
-                                <p class="mb1">{{slicestr .Summary 3 200 }}</p>
+                                <p class="mb1">{{slicestr .Summary 0 200 }}</p>
                             {{else}}
                                 <p class="mb1">{{ .Summary }}</p>
                             {{end}}
