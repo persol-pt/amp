@@ -2009,7 +2009,7 @@ body .www-component-anchors .www-component-anchor[option][selected] {
   line-height: 1rem;
   font-size: 1.125rem;
   white-space: pre-line;
-  background: #f9f7f7;
+  background: #383838;
   overflow-y: auto;
   margin: 0;
 }
@@ -2371,7 +2371,7 @@ pre {
   line-height: 1.4;
 }
 pre > code {
-  padding: 0;
+  padding: 5px;
 }
 code {
   padding: 2px 4px;
@@ -2400,9 +2400,11 @@ code {
   margin-bottom: 2rem;
   padding: 0;
 }
-.www-component-desc > .ampstart-card,
-.www-component-desc > pre {
+.www-component-desc > .ampstart-card{
   padding: 1rem;
+}
+.www-component-desc > pre {
+  padding: 5px;
 }
 @media (max-width: 40rem) {
   .www-component-desc > amp-iframe,
@@ -2420,7 +2422,7 @@ code {
 .www-component-desc > pre > code {
   white-space: pre-wrap;
   overflow-x: auto;
-  padding: 0;
+  padding: 10px;
   margin: 0;
 }
 .abe-code-container {
